@@ -9,11 +9,27 @@
     <link rel = "stylesheet" href="css/style.css">
 </head>
 <style>
+    #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: none;
+    object-fit: cover;
+    }
+    
     body {
         background-image: url('images/IMG_0979.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        transition: background-color 0.5s ease;
+    }
+    
+    body.active {
+        background-color: transparent;
     }
     
     h1 {
@@ -29,18 +45,23 @@
     }
 
     header nav ul li a:hover {
-	background-color: #555;
-}
+	background-color: #5f4a3b;
+    }
+    
 </style>
 
 <body>
     <header>
         <img src="images/logo.png" alt="Sharra Kutty Logo" id="logo">
+        <video id="background-video" autoplay loop muted playsinline>
+            <source src="videos/IMG_0458.mov" type="video/mp4">
+        </video>
         <nav>
             <ul>
                 <li class="active"><a href="index.html">HOME</a></li>
                 <li><a href="branding.html">BRANDING</a></li>
                 <li><a href="ux.html">UI/UX DESIGN</a></li>
+                <li><a href="ux.html">ABOUT ME</a></li>
                 <li><a href="https://drive.google.com/file/d/1rA7DiZLynl0ULLULmuRbwtA-rdXx9pmu/view?usp=sharing">RESUME</a></li>
                 <li><a href="https://www.linkedin.com/in/sharra-kutty/">LINKEDIN</a></li>
             </ul>
@@ -48,4 +69,5 @@
     </header>
     <h1>Hello I'm Sharra! I am a BBA student <br>through the Ross School of Business at the <br> University of Michigan with a minor in <br> UX/UI design and sustainability looking <br> to go into the marketing field. <br><br>Take a look at my work through the tabs! </h1>
 </body>
+<script src="style.js"></script>
 </html>

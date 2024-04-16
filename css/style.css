@@ -71,28 +71,34 @@ h3 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 30px;
-  }
+}
   
-  .grid-item {
+.grid-item {
 	text-align: left;
-  }
+}
   
-  .grid-item img {
+.grid-item img {
 	width: 100%;
-  }
+}
 
 
-  #video-container {
+#video-container {
 	position: relative;
-  }
+}
   
-  #video-container video {
+#video-container video {
 	position: absolute;
 	top: 0;
 	left: 0;
 	object-fit: cover;
-  }
+}
   
-  #video-container video:hover {
+#video-container video:hover {
 	display: block;
-  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	video {
+	  animation-play-state: paused;
+	}
+}

@@ -16,21 +16,16 @@ logo.addEventListener('click', () => {
   }
 });
 
-video.addEventListener('ended', () => {
-  body.classList.remove('active');
-  video.pause();
-  video.style.display = 'none';
-});
+document.addEventListener('DOMContentLoaded', function() {
+  var gridItems = document.querySelectorAll('.grid-item img');
 
-function playVideo(videoId) {
-    const video = document.getElementById(videoId);
-    video.play();
-  }
-  
-  function hideVideo(videoId) {
-    const video = document.getElementById(videoId);
-    video.pause();
-    video.currentTime = 0;
-    video.style.display = 'none';
-  }
-  
+  gridItems.forEach(function(gridItem) {
+      gridItem.addEventListener('mouseover', function() {
+          this.classList.add('dark-image');
+      });
+
+      gridItem.addEventListener('mouseout', function() {
+          this.classList.remove('dark-image');
+      });
+  });
+});

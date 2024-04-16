@@ -50,7 +50,7 @@ header nav ul li.active a {
 /* Style logo */
 #logo {
     max-width: 100%;
-    max-height: 50px; /* Same height as the navigation bar */
+    max-height: 50px; 
 }
 
 
@@ -81,22 +81,6 @@ h3 {
 	width: 100%;
 }
 
-
-#video-container {
-	position: relative;
-}
-  
-#video-container video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	object-fit: cover;
-}
-  
-#video-container video:hover {
-	display: block;
-}
-
 @media (prefers-reduced-motion: reduce) {
 	video {
 	  animation-play-state: paused;
@@ -111,4 +95,8 @@ body {
 
 .container {
     flex: 1;
+}
+
+.dark-image {
+    filter: brightness(0.7);
 }

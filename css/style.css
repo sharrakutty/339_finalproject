@@ -13,7 +13,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 1em;
-    margin-top: 40px;
 }
 
 
@@ -80,4 +79,20 @@ h3 {
   
   .grid-item img {
 	width: 100%;
+  }
+
+
+  #video-container {
+	position: relative;
+  }
+  
+  #video-container video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+  }
+  
+  #video-container video:hover {
+	display: block;
   }

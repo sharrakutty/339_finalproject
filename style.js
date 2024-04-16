@@ -21,3 +21,16 @@ video.addEventListener('ended', () => {
   video.pause();
   video.style.display = 'none';
 });
+
+function playVideo(videoId) {
+    const video = document.getElementById(videoId);
+    video.play();
+  }
+  
+  function hideVideo(videoId) {
+    const video = document.getElementById(videoId);
+    video.pause();
+    video.currentTime = 0;
+    video.style.display = 'none';
+  }
+  

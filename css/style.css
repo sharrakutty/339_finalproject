@@ -75,6 +75,7 @@ h3 {
   
 .grid-item {
 	text-align: left;
+	position: relative;
 }
   
 .grid-item img {
@@ -97,9 +98,9 @@ body {
     flex: 1;
 }
 
-.dark-image {
+/*.dark-image {
     filter: brightness(0.7);
-}
+}*/
 
 footer {
     text-align: center;
@@ -121,3 +122,27 @@ footer {
 	height: 20px;
 }
 
+.main-image {
+    position: relative;
+}
+
+.main-image + .thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.main-image:hover + .thumbnail {
+    display: block;
+	opacity: 1;
+}
+
+.main-image:not(:hover) + .thumbnail {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}

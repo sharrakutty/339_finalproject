@@ -16,7 +16,7 @@ logo.addEventListener('click', () => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   var gridItems = document.querySelectorAll('.grid-item img');
 
   gridItems.forEach(function(gridItem) {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
           this.classList.remove('dark-image');
       });
   });
-});
+});*/
 
 // Carousel //
 const carouselItems = document.querySelectorAll('.carousel-item');

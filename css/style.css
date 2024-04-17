@@ -100,3 +100,24 @@ body {
 .dark-image {
     filter: brightness(0.7);
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin: 0 10px;
+	height: 20px;
+}
+

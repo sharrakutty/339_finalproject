@@ -15,6 +15,9 @@ header {
 	padding: 1em;
 }
 
+nav {
+	z-index: 1000; /* set a higher z-index value */
+  }
 
 header #logo {
 	height: 50px;
@@ -143,3 +146,4 @@ footer {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
+

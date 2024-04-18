@@ -16,19 +16,6 @@ logo.addEventListener('click', () => {
   }
 });
 
-/*document.addEventListener('DOMContentLoaded', function() {
-  var gridItems = document.querySelectorAll('.grid-item img');
-
-  gridItems.forEach(function(gridItem) {
-      gridItem.addEventListener('mouseover', function() {
-          this.classList.add('dark-image');
-      });
-
-      gridItem.addEventListener('mouseout', function() {
-          this.classList.remove('dark-image');
-      });
-  });
-});*/
 
 // Carousel //
 const carouselItems = document.querySelectorAll('.carousel-item');
@@ -55,4 +42,6 @@ function previousSlide() {
 showSlide(currentIndex);
 document.getElementById('nextBtn').addEventListener('click', nextSlide);
 document.getElementById('prevBtn').addEventListener('click', previousSlide);
+
+
 

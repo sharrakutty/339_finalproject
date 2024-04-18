@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="typewriter.js"></script>
     <title>Branding</title>
 </head>
 
@@ -25,6 +27,13 @@
         </nav>
     </header>
     <h1>Branding</h1>
+    <span id="typewriter-1" data-text="Branding"></span>
+    <script>
+        $(document).ready(function() {
+            var $this = $('#typewriter-1');
+            $this.typeIt($this.data('text'), 0.3, 'html');
+        });
+    </script>
     <h2>Social Media accounts as well apparel that I handled and created throughout my time based on my club involvements as well as my personal accounts.</h2>
     <div class="grid-container">   
         <div class="grid-item">

@@ -42,7 +42,3 @@ function previousSlide() {
 showSlide(currentIndex);
 document.getElementById('nextBtn').addEventListener('click', nextSlide);
 document.getElementById('prevBtn').addEventListener('click', previousSlide);
-
-
-
-

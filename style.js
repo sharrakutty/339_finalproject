@@ -45,3 +45,5 @@ document.getElementById('prevBtn').addEventListener('click', previousSlide);
 
 
 
+
+

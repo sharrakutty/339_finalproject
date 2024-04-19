@@ -61,3 +61,4 @@ gridItems.forEach((gridItem) => {
     thumbnail.style.opacity = 0;
   });
 });
+

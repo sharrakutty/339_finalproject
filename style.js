@@ -42,3 +42,22 @@ function previousSlide() {
 showSlide(currentIndex);
 document.getElementById('nextBtn').addEventListener('click', nextSlide);
 document.getElementById('prevBtn').addEventListener('click', previousSlide);
+
+// Get all the grid items
+const gridItems = document.querySelectorAll('.grid-item');
+
+// Add an event listener to each grid item
+gridItems.forEach((gridItem) => {
+  const mainImage = gridItem.querySelector('.main-image');
+  const thumbnail = gridItem.querySelector('.thumbnail');
+
+  mainImage.addEventListener('mouseenter', () => {
+    thumbnail.style.display = 'block';
+    thumbnail.style.opacity = 1;
+  });
+
+  mainImage.addEventListener('mouseleave', () => {
+    thumbnail.style.display = 'none';
+    thumbnail.style.opacity = 0;
+  });
+});

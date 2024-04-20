@@ -39,6 +39,14 @@ function previousSlide() {
   showSlide(currentIndex);
 }
 
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'ArrowRight') {
+    nextSlide();
+  } else if (event.key === 'ArrowLeft') {
+    previousSlide();
+  }
+});
+
 showSlide(currentIndex);
 document.getElementById('nextBtn').addEventListener('click', nextSlide);
 document.getElementById('prevBtn').addEventListener('click', previousSlide);
@@ -62,3 +70,9 @@ gridItems.forEach((gridItem) => {
   });
 });
 
+var scrollEventHandler = function()
+{
+  window.scroll(0, window.pageYOffset)
+}
+
+window.addEventListener("scroll", scrollEventHandler, false);

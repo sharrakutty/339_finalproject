@@ -167,3 +167,8 @@ html, body {
 	padding-right: 300px;
 }
 
+
+.name {
+	max-width: 100%;
+	overflow-x: hidden;
+  }

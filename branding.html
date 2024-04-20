@@ -13,21 +13,21 @@
 
 <body>
     <header>
-        <a href="index.html">
+        <a tabindex="0" href="index.html">
             <img src="images/namelogo.png" alt="Sharra Kutty Logo" id="logo">
         </a>
         <nav>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li class="active"><a href="branding.html">BRANDING</a></li>
-                <li><a href="ux.html">UI/UX DESIGN</a></li>
-                <li><a href="https://drive.google.com/file/d/1rA7DiZLynl0ULLULmuRbwtA-rdXx9pmu/view?usp=sharing">RESUME</a></li>
-                <li><a href="https://www.linkedin.com/in/sharra-kutty/">LINKEDIN</a></li>
+                <li><a href="index.html" tabindex="0" >HOME</a></li>
+                <li class="active" tabindex="0" ><a href="branding.html">BRANDING</a></li>
+                <li><a href="ux.html" tabindex="0">UI/UX DESIGN</a></li>
+                <li><a href="https://drive.google.com/file/d/1rA7DiZLynl0ULLULmuRbwtA-rdXx9pmu/view?usp=sharing" tabindex="0">RESUME</a></li>
+                <li><a href="https://www.linkedin.com/in/sharra-kutty/" tabindex="0" >LINKEDIN</a></li>
             </ul>
         </nav>
     </header>
     <h1>Branding</h1>
-    <span id="typewriter-1" data-text="Branding"></span>
+    <span tabindex="0" id="typewriter-1" data-text="Branding"></span>
     <script>
         $(document).ready(function() {
             var $this = $('#typewriter-1');
@@ -53,16 +53,20 @@
             </a>
         </div>
         <div class="grid-item">
-            <div class="image-container">
-                <img src="images/Current2.png" width = "500" alt="Current2 work overview collage">
-                <img src="images/thumb_Current2.png" class="thumbnail" width="500" alt="Current2 thumbnail image">
-            </div>
+            <a href="current2.html">
+                <div class="image-container">
+                    <img src="images/Current2.png" width = "500" alt="Current2 work overview collage">
+                    <img src="images/thumb_Current2.png" class="thumbnail" width="500" alt="Current2 thumbnail image">
+                </div>
+            </a>
         </div>
         <div class="grid-item">
-            <div class="image-container">
-                <img src="images/Personal.png" width = "500" alt="My Personal Branding through Instagram">
-                <img src="images/thumb_Personal.png" class="thumbnail" width="500" alt="Personal thumbnail image">
-            </div>
+            <a href="personal.html">
+                <div class="image-container">
+                    <img src="images/Personal.png" width = "500" alt="My Personal Branding through Instagram">
+                    <img src="images/thumb_Personal.png" class="thumbnail" width="500" alt="Personal thumbnail image">
+                </div>
+            </a>
         </div>
     </div>
     <footer>

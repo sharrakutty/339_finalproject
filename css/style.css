@@ -19,11 +19,6 @@ nav {
 	z-index: 1000; /* set a higher z-index value */
   }
 
-header #logo {
-	height: 50px;
-	width: auto;
-}
-
 header nav ul {
 	display: flex;
 	list-style-type: none;
@@ -90,6 +85,28 @@ h3 {
 	video {
 	  animation-play-state: paused;
 	}
+	
+	.gif-1 {
+		animation-play-state: paused;
+	}
+	
+	.gif-1:hover {
+		background-image: url('Simple.png');
+		background-size: cover;
+	}
+	
+	.gif-2 {
+		animation-play-state: paused;
+	}
+	
+	.gif-2:hover {
+		background-image: url('Trisense.png');
+		background-size: cover;
+	}
+	
+	.typewriter {
+		animation: none;
+	  }
 }
 
 body {
